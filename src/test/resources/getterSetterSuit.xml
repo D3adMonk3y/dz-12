@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Getter and Setter Tests">
+    <test name="Man Getter and Setter Tests">
+        <classes>
+            <class name="ManTest">
+                <parameter name="manRetireAge" value="65"/>
+                <methods>
+                    <include name="testGet.*"/>
+                    <include name="testSet.*"/>
+                    <include name="testIs.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Woman Getter and Setter Tests">
+        <classes>
+            <class name="WomanTest">
+                <parameter name="womanRetireAge" value="60"/>
+                <methods>
+                    <include name="testGet.*"/>
+                    <include name="testSet.*"/>
+                    <include name="testIs.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
