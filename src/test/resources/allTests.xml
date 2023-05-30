@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Tests">
+    <test name="Man Tests">
+        <parameter name="manRetireAge" value="65"/>
+        <classes>
+            <class name="ManTest"/>
+        </classes>
+    </test>
+    <test name="Woman Tests">
+        <parameter name="womanRetireAge" value="60"/>
+        <classes>
+            <class name="WomanTest"/>
+        </classes>
+    </test>
+</suite>
